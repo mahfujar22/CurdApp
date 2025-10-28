@@ -83,11 +83,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
 
   Widget _buildProductItem(ProductModel product) {
     return ListTile(
-      /*leading: Image.network(
-       "${product.image}",
-        height: 60,
-        width: 60,
-      ),*/
       title: Text(product.productName?? "Unknown"),
       subtitle: Wrap(
         spacing: 62,
@@ -171,6 +166,5 @@ class _ProductListScreenState extends State<ProductListScreen> {
         SnackBar(content: Text('Delete product failed! Try again')),
       );
     }
-
   }
 }

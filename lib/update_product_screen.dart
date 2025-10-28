@@ -25,7 +25,6 @@ class _AddProductScreenState extends State<UpdateProductScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _nameTEController.text = widget.product.productName ?? "";
     _unitPriceTEController.text = widget.product.unitPrice ?? "";
